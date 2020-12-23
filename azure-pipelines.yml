@@ -39,7 +39,7 @@ steps:
     SearchPattern: '**\bin\**\*.pub'
   continueOnError: true
 
-- task: CopyFiles@l
+- task: CopyFiles@1
   displayName: 'Copy Files to: S(build.artifactstagingdirectory)'
   inputs:
     SourceFolder: '$(build.sourcesdirectory)'
